@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Bootstrap Scripts CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1d32728fff.js" crossorigin="anonymous"></script>
+    <!-- --------GoogleFonts-------- -->
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Permanent+Marker&family=Poppins:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <!-- --------Style for swiper----------- -->
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+    <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#"><img src="logo.png" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Testimonials</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  </section>
+    <!-- ---------------------Banner------------------- -->
+  <section id="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <p class="promo-title">SECWARE IT SOLUTIONS</p>
+          <p>is a trusted IT company and certified partner of Microsoft, ESET, BullGuard and Panda Security. Our Philippines - based customer service team can help you choose the right version of the software you need with low price and high satisfaction.
+            Better yet, we have a technical support team that can help you via phone, email, webchat and remote desktop at no additional cost.</p>
+          <a href="https://www.secwareitsolutions.com/category/operating-system/45/" id="btn">Learn More</a>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="winprohome.png" alt="" class="fluid">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="thumb">
+            <li><img src="1.png" alt="" onclick="imgSlider('winprohome.png'); changebtn()"></li>
+            <li><img src="2.png" alt="" onclick="imgSlider('OH&BS.png'); changebtn1()"></li>
+            <li><img src="3.png" alt="" onclick="imgSlider('security.png'); changebtn2()"></li>
+          </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <script type="text/javascript">
+      function imgSlider(anything){
+        document.querySelector('.fluid').src = anything;
+      }
+      function changebtn(){
+        document.getElementById("btn").href = "https://www.secwareitsolutions.com/category/operating-system/45/";
+      }
+      function changebtn1(){
+        document.getElementById("btn").href = "https://www.secwareitsolutions.com/category/operating-system/45/";
+      }
+      function changebtn2(){
+        document.getElementById("btn").href = "https://www.secwareitsolutions.com/category/antivirus/46/";
+      }
+    </script>
+    <!-- ------------What we Offer------------ -->
+    <section id="offer">
+
+    <h1 class="title text-center">What We Offer</h1>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container">
+      <div class="card">
+        <div class="imgBx">
+          <img src="3.png" alt="">
+        </div>
+        <div class="contentBx">
+          <h2>Microsoft</h2>
+          <p>We Offer Windows 10 OS and Microsoft Office 2019</p>
+        <a href="#">Check Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="imgBx">
+        <img src="1.png" alt="">
+      </div>
+      <div class="contentBx">
+        <h2>Microsoft</h2>
+        <p>We Offer Windows 10 OS and Microsoft Office 2019</p>
+      <a href="#">Check Now</a>
+    </div>
+  </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="container">
+      <div class="card">
+        <div class="imgBx">
+          <img src="game.svg" alt="">
+        </div>
+        <div class="contentBx">
+          <h2>Microsoft</h2>
+          <p>We Offer Windows 10 OS and Microsoft Office 2019</p>
+        <a href="#">Check Now</a>
+      </div>
+    </div>
+
+
+      <div class="card">
+        <div class="imgBx">
+          <img src="hardware.png" alt="">
+        </div>
+        <div class="contentBx">
+          <h2>Microsoft</h2>
+          <p>We Offer Windows 10 OS and Microsoft Office 2019</p>
+        <a href="#">Check Now</a>
+      </div>
+    </div>
+    </div>
+    </div>
+
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <i class="fas fa-chevron-left"></i></a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <i class="fas fa-chevron-right"></i></a>
+</div>
+</section>
+<section id="top">
+
+<h1 class="title text-center">Our Top Products</h1>
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="imgBx">
+        <img src="winprohome.png" alt="">
+      </div>
+      <div class="details">
+        <h3>Kyrie Irbeng<br><span>BAsketball Asset</span></h3>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="imgBx">
+        <img src="OH&BS.png" alt="">
+      </div>
+      <div class="details">
+        <h3>Kyrie Irbeng<br><span>BAsketball Asset</span></h3>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="imgBx">
+        <img src="3.jpg" alt="">
+      </div>
+      <div class="details">
+        <h3>Kyrie Irbeng<br><span>BAsketball Asset</span></h3>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="imgBx">
+        <img src="4.jpg" alt="">
+      </div>
+      <div class="details">
+        <h3>Kyrie Irbeng<br><span>BAsketball Asset</span></h3>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="imgBx">
+        <img src="5.jpg" alt="">
+      </div>
+      <div class="details">
+        <h3>Kyrie Irbeng<br><span>BAsketball Asset</span></h3>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="imgBx">
+        <img src="6.jpg" alt="">
+      </div>
+      <div class="details">
+        <h3>Kyrie Irbeng<br><span>BAsketball Asset</span></h3>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="imgBx">
+        <img src="7.jpg" alt="">
+      </div>
+      <div class="details">
+        <h3>Kyrie Irbeng<br><span>BAsketball Asset</span></h3>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+<script type="text/javascript" src="swiper.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 60,
+      stretch: 0,
+      depth: 500,
+      modifier: 5,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+</script>
+</section>
+  </body>
+</html>
